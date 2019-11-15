@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--头部快捷功能-->
+        <LinearLayout
+            android:id="@+id/daily_title_head"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:background="@color/white"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/system_plan_title_head"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="17dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimary"
+                android:text="日常必备"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="3dp"/>
+            <TextView
+                android:id="@+id/system_title_head_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="详情"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/daily_title_body"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@+id/system_title_head"
+            android:background="@color/windowBackground"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/daily_title_body_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/style_drawable_click_bg_change"
+                android:clickable="true"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="45dp"
+                    android:src="@mipmap/system_daily_title_img1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:text="婴儿食谱"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/daily_title_body_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/style_drawable_click_bg_change"
+                android:clickable="true"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="45dp"
+                    android:src="@mipmap/system_daily_title_img2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:text="生活百科"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/daily_title_body_3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/style_drawable_click_bg_change"
+                android:clickable="true"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="45dp"
+                    android:src="@mipmap/system_daily_title_img3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:text="哄睡音乐"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/daily_title_body_4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/style_drawable_click_bg_change"
+                android:clickable="true"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="45dp"
+                    android:src="@mipmap/system_daily_title_img4"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:text="出行游玩"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+        <com.mingle.widget.LoadingView
+            android:id="@+id/loadView"
+            android:layout_width="fill_parent"
+            android:layout_height="350dp"/>
+
+        <WebView
+            android:id="@+id/community_webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></WebView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

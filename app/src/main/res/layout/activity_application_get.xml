@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.ApplicationGetActivity"
+    android:padding="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/getApp"
+            android:text="加载更多..."
+            android:layout_width="match_parent"
+            android:background="@drawable/style_radius_theme_bg"
+            android:textColor="@color/white"
+            android:layout_height="60dp" />
+    </LinearLayout>
+
+</ScrollView>

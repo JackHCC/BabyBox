@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+     <item android:title="更换源1" android:id="@+id/trip1"
+     ></item>
+     <item android:id="@+id/trip2" android:title="更换源2"></item>
+     <item android:id="@+id/trip3" android:title="更换源3"></item>
+     <item android:id="@+id/trip4" android:title="更换源4"></item>
+     <item android:id="@+id/trip5" android:title="更换源5"></item>
+     <item android:id="@+id/trip6" android:title="关闭"></item>
+
+</menu>

@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/refreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="60dp">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/datashow_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srlPrimaryColor="@color/gray"
+        app:srlAccentColor="@android:color/white"
+        app:srlEnablePreviewInEditMode="true"
+        app:srlEnableLoadMore="false">
+    <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <!--非连接展示-->
+    <RelativeLayout
+        android:id="@+id/datashow_disconnect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/windowBackground"
+        android:visibility="visible">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="28dp"
+            android:text="未连接..."
+            android:background="@color/colorPrimary"
+            android:layout_margin="10dp"
+            android:gravity="center_horizontal"
+            android:paddingTop="190dp"/>
+
+
+            <ImageView
+                android:id="@+id/datashow_disconnect_setting"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="35dp"
+                android:background="@mipmap/datashow_disconnect_setting"
+                android:layout_marginBottom="6dp"/>
+
+            <ImageView
+                android:id="@+id/datashow_disconnect_help"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="290dp"
+                android:layout_marginTop="35dp"
+
+                android:background="@mipmap/datashow_disconnect_help"/>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16dp"
+            android:text="请打开产品BabyBox"
+            android:background="@color/white"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="280dp"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <!--连接状态展示-->
+    <ScrollView
+        android:id="@+id/datashow_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--婴儿状态展示-->
+        <RelativeLayout
+            android:id="@+id/baby_status"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_marginBottom="-50dp">
+
+            <TextView
+                android:id="@+id/baby_status_time"
+                android:layout_width="330dp"
+                android:layout_height="26dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="16dp"
+                android:paddingTop="4dp"
+                android:textAlignment="center"
+                android:text="--------------------"
+                android:textSize="14dp"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimaryDark"/>
+
+            <ImageView
+                android:id="@+id/baby_status_camera"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="305dp"
+                android:background="@drawable/main_jiankong"/>
+
+            <TextView
+                android:id="@+id/baby_status_boolean"
+                android:layout_width="200dp"
+                android:layout_height="80dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="58dp"
+                android:paddingTop="20dp"
+                android:textAlignment="center"
+                android:text="---"
+                android:textSize="30dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimaryDark"/>
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/baby_status_anim"
+                android:layout_marginTop="75dp"
+                android:layout_toRightOf="@id/baby_status_boolean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:indicatorName="BallBeatIndicator"
+                android:layout_marginLeft="-60dp"
+                />
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/baby_status_anim_sleep"
+                android:layout_marginTop="77dp"
+                android:layout_toRightOf="@id/baby_status_boolean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:indicatorName="BallPulseSyncIndicator"
+                android:layout_marginLeft="-60dp"
+                />
+
+
+            <TextView
+                android:id="@+id/baby_status_cry"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="158dp"
+                android:paddingTop="9dp"
+                android:textAlignment="center"
+                android:text="---"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/baby_status_vibra"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="158dp"
+                android:paddingTop="9dp"
+                android:textAlignment="center"
+                android:text="---"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimaryDark"
+                android:layout_toRightOf="@id/baby_status_cry"
+                />
+
+            <TextView
+                android:id="@+id/baby_status_others"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="158dp"
+                android:paddingTop="9dp"
+                android:textAlignment="center"
+                android:text="---"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimaryDark"
+                android:layout_toRightOf="@id/baby_status_vibra"/>
+
+        </RelativeLayout>
+
+        <!--数据列下半部分-->
+
+
+        <RelativeLayout
+            android:id="@+id/main_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+            <!--数据列标头-->
+            <LinearLayout
+                android:id="@+id/main_middle_top"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/main_title" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="12dp"
+                    android:textAlignment="center"
+                    android:text="室内数据单"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+                <TextView
+                    android:id="@+id/main_middle_top_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp"
+                    android:layout_marginLeft="166dp"
+                    android:textAlignment="center"
+                    android:text="详情"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    />
+            </LinearLayout>
+
+                <!--数据列表-->
+                <LinearLayout
+                    android:id="@+id/main_middle_bottom"
+                    android:layout_marginTop="40dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/colorPrimary">
+
+                    <!--温度数据-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/white">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+                            <com.mikhaellopez.circularfillableloaders.CircularFillableLoaders
+                                android:id="@+id/main_circle_temp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:src="@drawable/main_temp"
+                                app:cfl_progress="80"
+                                app:cfl_wave_color="@color/colorPrimary" />
+
+                                <TextView
+                                    android:id="@+id/main_data_temp"
+                                    android:layout_width="120dp"
+                                    android:layout_height="60dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginRight="20dp"
+                                    android:layout_marginTop="74dp"
+                                    android:background="#00000000"
+                                    android:text="---"
+                                    android:textAlignment="center"
+                                    android:textSize="18dp"
+                                    android:textColor="@color/white"
+                                    android:paddingTop="16dp"/>
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/main_data_temp_f"
+                                android:layout_width="120dp"
+                                android:layout_height="24dp"
+                                android:text="---"
+                                android:textSize="14dp"
+                                android:paddingTop="2dp"
+                                android:layout_marginLeft="25dp"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="30dp"
+                                android:textAlignment="center"
+                                android:layout_marginBottom="5dp"
+                                android:background="@color/colorPrimaryDark"/>
+                            <TextView
+                                android:id="@+id/main_data_temp_level"
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="40dp"
+                                android:layout_marginTop="15dp"
+                                android:text="---"
+                                android:textSize="14dp"
+                                android:paddingTop="10dp"
+                                android:textAlignment="center"
+
+                                android:textColor="@color/white"
+                                android:background="@color/colorPrimaryDark"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--湿度数据-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/white">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+                            <com.mikhaellopez.circularfillableloaders.CircularFillableLoaders
+                                android:id="@+id/main_circle_humid"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:src="@drawable/main_humid"
+                                app:cfl_progress="80"
+                                app:cfl_wave_color="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/main_data_humid"
+                                android:layout_width="120dp"
+                                android:layout_height="60dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="74dp"
+                                android:background="#00000000"
+                                android:text="---"
+                                android:textAlignment="center"
+                                android:textSize="18dp"
+                                android:textColor="@color/white"
+                                android:paddingTop="16dp"/>
+                        </RelativeLayout>
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="24dp"
+                                android:text="室内湿度状况："
+                                android:textSize="12dp"
+                                android:paddingTop="4dp"
+                                android:layout_marginLeft="25dp"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="30dp"
+                                android:textAlignment="center"
+                                android:layout_marginBottom="5dp"
+                                android:background="@color/colorPrimaryDark"/>
+                            <TextView
+                                android:id="@+id/main_data_humid_level"
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="40dp"
+                                android:layout_marginTop="15dp"
+                                android:text="---"
+                                android:textSize="14dp"
+                                android:paddingTop="10dp"
+                                android:textAlignment="center"
+
+                                android:textColor="@color/white"
+                                android:background="@color/colorPrimaryDark"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--光线数据-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/white">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+                            <com.mikhaellopez.circularfillableloaders.CircularFillableLoaders
+                                android:id="@+id/main_circle_light"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:src="@drawable/main_light"
+                                app:cfl_progress="80"
+                                app:cfl_wave_color="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/main_data_light"
+                                android:layout_width="120dp"
+                                android:layout_height="60dp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginTop="74dp"
+                                android:background="#00000000"
+                                android:text="---"
+                                android:textAlignment="center"
+                                android:textSize="18dp"
+                                android:textColor="@color/white"
+                                android:paddingTop="16dp"/>
+                        </RelativeLayout>
+                        <LinearLayout
+                            android:layout_width="180dp"
+                            android:layout_height="140dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="120dp"
+                                android:layout_height="24dp"
+                                android:text="室内光强状况："
+                                android:textSize="12dp"
+                                android:paddingTop="4dp"
+                                android:layout_marginLeft="25dp"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="30dp"
+                                android:textAlignment="center"
+                                android:layout_marginBottom="5dp"
+                                android:background="@color/colorPrimaryDark"/>
+                            <TextView
+                                android:id="@+id/main_data_light_level"
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="40dp"
+                                android:layout_marginTop="15dp"
+                                android:text="---"
+                                android:textSize="14dp"
+                                android:paddingTop="10dp"
+                                android:textAlignment="center"
+
+                                android:textColor="@color/white"
+                                android:background="@color/colorPrimaryDark"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    </ScrollView>
+    </RelativeLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <!--悬浮按钮-->
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmb_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        app:bmb_normalColor="@color/colorPrimaryDark"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="25dp"
+        app:bmb_dimColor="#80000000"
+        app:bmb_buttonEnum="ham"
+        app:bmb_piecePlaceEnum="piecePlace_ham_4"
+        app:bmb_buttonPlaceEnum="buttonPlace_ham_4"
+        />
+
+</RelativeLayout>

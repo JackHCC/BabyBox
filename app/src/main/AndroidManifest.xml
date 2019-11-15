@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jack.carebaby">
+
+    <application
+        android:name="cn.bgbsk.babycare.global.Data"
+        android:allowBackup="true"
+        android:icon="@mipmap/babyboxs"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/babyboxs"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.LiveAlarmActivity"></activity>
+        <activity android:name=".ui.OlderLocateActivity" />
+        <activity android:name=".ui.OlderTimealarmActivity" />
+        <activity android:name=".ui.OlderFlashlightActivity" />
+        <activity
+            android:name=".ui.WebToolsActivity"
+            android:label="功能大全" />
+        <activity
+            android:name=".ui.HomePage"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.CameraActivity" /> <!-- 出行备忘相关界面 -->
+        <activity android:name="com.memorandum.EditActivity" />
+        <activity
+            android:name="com.memorandum.MainActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.memorandum.AlarmActivity" /> <!-- 登录注册页面 -->
+        <activity android:name=".ui.LoginActivity" />
+        <activity
+            android:name=".ui.RegisterActivity"
+            android:theme="@style/Translucent" />
+        <activity
+            android:name=".ui.AddBabyActivity"
+            android:label="NewBaby" />
+        <activity
+            android:name=".ui.AddOlderActivity"
+            android:label="NewOlder" />
+        <activity
+            android:name=".ui.ImgShowActivity"
+            android:label="ShowImg" />
+        <activity
+            android:name=".ui.BabyInfoShowActivity"
+            android:label="ShowInfo">
+            <intent-filter>
+                <action android:name="com.jack.carebaby.ui.BabyInfoAddActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.BabyInfoAddActivity"
+            android:label="NewInfo">
+            <intent-filter>
+                <action android:name="com.jack.carebaby.ui.BabyInfoAddActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.PlanWHeightAddActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="com.jack.carebaby.ui.PlanWHeightAddActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.PlanWHeightActivity"
+            android:label="身高体重">
+            <intent-filter>
+                <action android:name="com.jack.carebaby.ui.PlanWHeightAddActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.SettingActivity"
+            android:label="Setting" />
+        <activity android:name=".ui.ApplicationGetActivity" /> <!-- 悬浮窗 -->
+        <activity android:name=".ui.MoreToolsActivity" />
+        <activity android:name=".ui.PlanBillAddActivity">
+            <intent-filter>
+                <action android:name="com.jack.carebaby.ui.PlanBillAddActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.PlanBillActivity">
+            <intent-filter>
+                <action android:name="com.jack.carebaby.ui.PlanBillActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.HospitalAskActivity" />
+        <activity android:name=".ui.HospitalHandleActivity" />
+        <activity
+            android:name=".ui.DailyKnowActivity"
+            android:label="生活百科" />
+        <activity
+            android:name=".ui.DailyEatActivity"
+            android:label="食谱推荐" />
+        <activity
+            android:name=".ui.DailyTripActivity"
+            android:label="出行推荐" />
+        <activity
+            android:name=".ui.HelpAllActivity"
+            android:label="说明文档" />
+        <activity
+            android:name=".ui.OlderEatActivity"
+            android:label="饮食注意" />
+        <activity
+            android:name=".ui.OlderHealthActivity"
+            android:label="老人保健" />
+        <activity
+            android:name=".ui.OlderCCTVActivity"
+            android:label="CCTV" />
+        <activity
+            android:name=".ui.OlderNewsActivity"
+            android:label="文字新闻" />
+        <activity
+            android:name=".ui.OlderFMActivity"
+            android:label="FM听书" />
+        <activity
+            android:name=".ui.OlderDialActivity"
+            android:label="哄睡音乐" />
+        <activity
+            android:name=".ui.UserManageActivity"
+            android:label="用户管理">
+        </activity>
+        <activity
+            android:name=".ui.HeadImgChangeActivity"
+            android:label="修改头像" />
+        <activity
+            android:name=".ui.BabyImgChangeActivity"
+            android:label="修改宝宝头像" />
+        <activity
+            android:name=".ui.BabyTestActivity"
+            android:label="婴儿测评" />
+        <activity
+            android:name=".ui.HospitalYimiaoActivity"
+            android:label="疫苗接种" />
+        <activity
+            android:name=".ui.LunarCalendarActivity"
+            android:label="老黄历" />
+        <activity
+            android:name=".ui.LiveGarbageActivity"
+            android:label="垃圾分类" />
+
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+        <service android:name=".service.FloatWindowServer" />
+        <service android:name=".service.FloatCameraServer" />
+    </application>
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 震动权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 存储权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 电话权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 短信权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- 相机权限 -->
+    <uses-permission android:name="android.permission.SEND_SMS" /> <!-- 定位权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+</manifest>

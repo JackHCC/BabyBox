@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/style_radius_stroke"
+    android:layout_marginTop="6dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+    <ImageView
+        android:id="@+id/id_index_gallery_item_image"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitCenter"
+        android:layout_margin="4dp" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:lineSpacingExtra="6dp"
+        android:text="记录"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="12dp"
+        android:textColor="@color/colorPrimary"
+        android:text="时间"
+        android:textSize="10sp"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>

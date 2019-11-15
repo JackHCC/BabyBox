@@ -1,0 +1,95 @@
+<resources>
+    <drawable name="clr_normal">#5598df</drawable>
+
+    <!--备忘录-->
+    <drawable name="clr_pressed">#79B6F0</drawable>
+    <string name="app_name">BabyBox</string>
+    <string name="action_settings">Settings</string>
+    <string name="listView">ListView</string>
+    <string name="back">&lt;</string>
+    <string name="timeSet">time set</string>
+    <string name="dateText">datetime</string>
+    <string name="search_hint">搜索记录</string>
+    <string name="search_label">搜索</string>
+    <string name="alertName">事件提醒</string>
+    <!--备忘录-->
+
+    <!--团队介绍-->
+    <string name="positiveButton">查看</string>
+    <string name="negativeButton">忽略</string>
+    <string name="setting_group_title">BabyBox团队介绍</string>
+    <string name="setting_group_p1">BabyBox团队来自北京市海淀区学院路30号北京科技大学团队，团队目前成员有：胡成成，宋昆，魏俊峰，王艺霖等人。</string>
+    <!--团队介绍-->
+
+    <!--数据界面功能说明-->
+    <string name="setting_group_p2">为BabyBox提供建议，可以发送邮件，关注官方微信公众平台，微博等联系我们，改善BabyBox,让BabyBox更适合您！</string>
+    <string name="setting_group_p3">©BabyBox版权所有</string>
+
+    <string name="datashow_help_title">数据说明</string>
+    <string name="datashow_help_p1">数据单页面获取的是产品开启时获取环境内相关数据的展示的页面：具体包括婴儿状态数据，哭声指数，摇床震动，附近是否有人，温湿度，亮度等数据，具体说明如下：</string>
+    <string name="datashow_help_p2">在数据页面的最近一次检测时间是产品打开时最后一次检测到的数据，并非此时数据，可能会出现一些故障导致产品断电等，因此记录的是最后一次状态数据。时间精度到秒级</string>
+    <string name="datashow_help_p3">婴儿相关状态数据通过麦克风传感器，震动传感器和红外传感器获取数据。其中哭声指数是检测婴儿此时是否睡醒，该数据是通过检测婴儿环境的声音强度，主要是检测哭声，如果检测到哭声，该数值短时间内波动巨大，即指数正负都超过了60，此时婴儿环境就很吵闹，可能是其他噪音，也很可能就是婴儿在啼哭。
+    如果婴儿是放在摇床上，当婴儿睡醒开始乱动时，固定在摇床上的产品就会检测到振动，振动参数有平稳和振动。当音频波动较大并且摇床在晃动就会强烈触发婴儿清醒判断，在手机端就会振动提醒。附近有人检测，检测婴儿附近环境有无其他人靠近，保证婴儿安全</string>
+    <string name="datashow_help_p4">温度数据展示的婴儿所处的室内环境温度，包括华氏度展示，并根据温度段进行提示，湿度数据展示及对湿度进行监测，功能类似温度。光强数据监测婴儿所处环境光强，防止光强过强损伤眼睛，对光强进行量化，0~1000内数值，数值越高，光强越高。</string>
+    <string name="datashow_help_p5">同时可点击摄像头按钮或下方悬浮按钮进入监控页面查看婴儿实时视频状态确认，保证远程监控婴儿的功能，更加安全便携。同时可在设置里打开桌面悬浮，直接在桌面进入该页面快速查看婴儿状态。</string>
+    <string name="datashow_help_p6">BabyCare监测数据，伴婴儿健康成长~</string>
+
+    <!--数据界面功能说明-->
+
+    <string name="daily_help_title">日常说明</string>
+    <string name="daily_help_p1">婴儿食谱：给孩子做一些健康美味的菜肴吧</string>
+    <string name="daily_help_p2">生活百科：孩子成长过程中的小贴士，为成长保驾护航。</string>
+    <string name="daily_help_p3">哄睡音乐：内含多种有助于婴儿睡眠的音乐，点开它，帮助孩子获得一个美梦吧。</string>
+    <string name="daily_help_p4">出行游玩：可以根据孩子的年龄，智能推荐多个适合亲子共同游玩、亲密互动的地方。</string>
+
+    <string name="plan_help_title">成长计划说明</string>
+    <string name="plan_help_p1">成长相册：通过摄像头，拍摄照片，捕捉孩子成长过程中的亲子精彩时刻，记录孩子的成长轨迹。</string>
+    <string name="plan_help_p2">成长记录：在这里，您可以看到孩子每月的平均睡眠时间和哭闹次数。</string>
+    <string name="plan_help_p3">身高体重：在这里记录孩子每次的身高体重，可以更直观见证孩子的茁壮成长。</string>
+    <string name="plan_help_p4">成长账本：账本可以记录孩子的花费，清晰了解孩子在教育、医疗、饮食等各方面的费用。</string>
+    <string name="plan_help_p5">成长计划：您可以添加孩子成长过程中需要完成的事情，比如需要断奶、学习走路、学会说话、上幼儿园等等。</string>
+
+
+    <string name="live_help_title">居家说明</string>
+    <string name="live_help_p1">喂奶提醒：可以根据孩子是否哭闹以及上一次喂奶的时间，为您提示下一次应该喂奶的时间，让孩子舒适，让家长舒心。</string>
+    <string name="live_help_p2">环境监测： 自动检测环境中的温度、湿度、光强等信息。</string>
+    <string name="live_help_p3">垃圾分类： 可以查询各种垃圾的类别，垃圾数据庞大。</string>
+    <string name="live_help_p4">居家记录： 记录孩子每日的清醒时间、熟睡时间、饮食次数、哭闹次数等。</string>
+
+    <string name="hospital_help_title">医疗说明</string>
+    <string name="hospital_help_p1">症状处理：通过输入相应的症状，快速知晓孩子病情，并给出相应的救护措施。</string>
+    <string name="hospital_help_p2">疫苗接种：在这里有各种疫苗接种的合适年龄。</string>
+    <string name="hospital_help_p3">医生问答：孩子生病时可以快速联系医生进行问答，解决您的燃眉之急。</string>
+    <string name="hospital_help_p4">医疗档案：记录孩子的健康状况，将每一次医疗情况记入档案内。</string>
+
+    <string name="disconnect_help_title">未连接问题</string>
+    <string name="disconnect_help_p1">1.检查手机是否接入网络，WiFi或移动数据。</string>
+    <string name="disconnect_help_p2">2.检查产品是否正常打开。</string>
+    <string name="disconnect_help_p3">3.检查产品是否接入网络，无法接入将网络源改为：热点名：JACKPC；密码：87654312。</string>
+    <string name="disconnect_help_p4">4.摄像头无法连接则输入正确的地址源，查看摄像头链接的地址IP。</string>
+
+    <string name="older_help_title">老人模式说明</string>
+    <string name="older_help_p1">监控页主要包括视频流监控及设置地址；老人电话拨号；以及预设手机号紧急救助时摇一摇手机就拨通预设手机号</string>
+    <string name="older_help_p2">个人页面同婴儿页面差不多，可添加老人，医疗档案，健忘备忘，生活百科，健康测评等功能。</string>
+    <string name="older_help_p3">老人工具主要包括FM听书，文字新闻，新闻联播CCTV，老人保健，照明手电，定位导航，快捷消息，整点报时，放大镜，饮食注意。</string>
+    <string name="older_help_p4">时间显示可以展示当前时间，以及老黄历符合老人的时间观念。</string>
+    <string name="older_help_p5">老人模式与婴儿模式之间互相切换，让更多人群受益该软件。</string>
+
+    <!--账本-->
+
+    <string name="cancel">取消</string>
+    <string name="title">请选择时间</string>
+    <string name="confirm">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+    <string name="select_title">消费物品</string>
+    <string name="select_price">消费金额</string>
+    <!--账本-->
+
+    <string name="select_time">选择时间</string>
+    <string name="current_time">当前时间</string>
+</resources>

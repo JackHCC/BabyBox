@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+     <item android:title="问答源1" android:id="@+id/ask1"
+     ></item>
+     <item android:id="@+id/ask2" android:title="问答源2"></item>
+     <item android:id="@+id/ask3" android:title="问答源3"></item>
+     <item android:id="@+id/ask4" android:title="关闭"></item>
+
+</menu>

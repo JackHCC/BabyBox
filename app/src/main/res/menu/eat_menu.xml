@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+     <item android:title="食谱推荐" android:id="@+id/eat1"
+     ></item>
+     <item android:id="@+id/eat2" android:title="食谱分类"></item>
+     <item android:id="@+id/eat3" android:title="宝宝专属"></item>
+     <item android:id="@+id/eat4" android:title="关闭"></item>
+
+</menu>

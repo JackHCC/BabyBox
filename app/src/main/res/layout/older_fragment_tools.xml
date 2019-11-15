@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/style_radius_theme_bg"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/older_time"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="19:20"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/older_date"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="10月1日"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/older_week"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:text="星期一"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/older_nongli"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="78dp"
+                android:layout_width="70dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:text="老黄历"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/style_radius_stroke"
+                android:textSize="18dp" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+            <Button
+                android:id="@+id/older_tools_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/style_radius_stroke_gray"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/older_small"
+                android:text="FM听书"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/older_tools_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/style_radius_stroke_gray"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/older_small"
+                android:text="文字新闻"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/older_tools_3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/style_radius_stroke_gray"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/older_small"
+                android:text="新闻联播"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/older_tools_4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/style_radius_stroke_gray"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/older_small"
+                android:text="老人保健"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/older_tools_5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/style_radius_stroke_gray"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/older_small"
+                android:text="照明手电"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/older_tools_6"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/style_radius_stroke_gray"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/older_small"
+                android:text="定位导航"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/older_tools_7"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/style_radius_stroke_gray"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/older_small"
+                android:text="快捷消息"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/older_tools_8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/style_radius_stroke_gray"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/older_small"
+                android:text="整点报时"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/older_tools_9"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/style_radius_stroke_gray"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/older_small"
+                android:text="放大镜"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/older_tools_10"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@drawable/style_radius_stroke_gray"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/older_small"
+                android:text="饮食注意"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

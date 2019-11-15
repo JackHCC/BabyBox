@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ui.OlderFMActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/style_radius_stroke_gray"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/older_small"
+            android:text="听听FM"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/button_2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/style_radius_stroke_gray"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/older_small"
+            android:text="喜马拉雅"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/button_3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/style_radius_stroke_gray"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/older_small"
+            android:text="懒人听书"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/button_4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="@drawable/style_radius_stroke_gray"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/older_small"
+            android:text="关闭返回"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.mingle.widget.LoadingView
+        android:id="@+id/loadView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <WebView
+        android:id="@+id/FM_webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

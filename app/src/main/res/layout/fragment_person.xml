@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="60dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--头部-->
+        <RelativeLayout
+            android:id="@+id/person_title_head"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+
+            <!--头像-->
+            <ImageView
+                android:id="@+id/person_title_head_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="fitXY"
+                android:background="@drawable/style_radius_stroke"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/babyboxs"
+                />
+
+            <!--昵称-->
+            <TextView
+                android:id="@+id/person_title_head_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="未登录"
+                android:textSize="18sp"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentLeft="true"
+
+                />
+
+            <TextView
+                android:id="@+id/person_title_head_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="您已入驻?天，拥有宝贝?个"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginLeft="105dp"
+                android:layout_marginTop="55dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentLeft="true"
+                />
+
+            <!--修改logo-->
+            <ImageView
+                android:id="@+id/person_title_head_namechange"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@mipmap/system_person_title_namechange"
+                android:scaleType="fitXY"
+                android:layout_toRightOf="@id/person_title_head_name"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="20dp"/>
+
+            <!--二维码-->
+            <ImageButton
+                android:id="@+id/person_title_head_scanimg"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="#00ffffff"
+                android:scaleType="fitXY"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="33dp"
+                android:src="@mipmap/system_person_title_scanimg"
+                />
+        </RelativeLayout>
+        <!--头部-->
+
+        <!--中部-->
+        <LinearLayout
+            android:id="@+id/person_body_head"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/windowBackground"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/person_body_head_1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/style_drawable_click_bg_change"
+                android:clickable="true"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="14dp"
+                    android:background="@mipmap/system_plan_content_title" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:text="添加宝宝"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/person_body_head_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/style_drawable_click_bg_change"
+                android:clickable="true"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@mipmap/system_person_body_img2"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="14dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:text="意见反馈"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/person_body_head_3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/style_drawable_click_bg_change"
+                android:clickable="true"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@mipmap/system_person_body_img3"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="14dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:text="设置"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/person_body_head_4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/style_drawable_click_bg_change"
+                android:clickable="true"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:src="@mipmap/system_person_body_img4"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="14dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:text="更多"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--宝宝列表-->
+
+        <LinearLayout
+            android:id="@+id/person_content_head"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:background="@color/white"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/person_babylist_title"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="17dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimary"
+                android:text="宝宝列表"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+        <!--用listview代替-->
+        <LinearLayout
+            android:id="@+id/person_content_baby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/style_drawable_click_bg_change"
+            android:clickable="true"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layout">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/person_content_baby_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </android.support.v7.widget.RecyclerView>
+            </android.support.design.widget.CoordinatorLayout>
+
+        </LinearLayout>
+
+
+        <!--body——footer-->
+
+        <!--成长档案-->
+        <LinearLayout
+            android:id="@+id/person_body_foot_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/style_drawable_click_bg_change"
+            android:clickable="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/system_person_record"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:text="成长档案"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <!--事件记录-->
+        <LinearLayout
+            android:id="@+id/person_body_foot_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/style_drawable_click_bg_change"
+            android:clickable="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="18dp"
+                android:src="@mipmap/system_plan_title_img2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:text="事件记录"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <!--生活百科-->
+        <LinearLayout
+            android:id="@+id/person_body_foot_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/style_drawable_click_bg_change"
+            android:clickable="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/system_daily_title_img2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:text="生活百科"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!--婴儿测评-->
+        <LinearLayout
+            android:id="@+id/person_body_foot_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/style_drawable_click_bg_change"
+            android:clickable="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/system_person_value"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:text="婴儿测评"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <!--帮助-->
+        <LinearLayout
+            android:id="@+id/person_body_foot_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/style_drawable_click_bg_change"
+            android:clickable="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/system_person_help"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:text="帮助手册"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

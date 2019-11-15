@@ -1,0 +1,77 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee">
+
+
+    <RelativeLayout
+        android:id="@+id/babyboxs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/home_viewpage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <com.flyco.tablayout.CommonTabLayout
+            android:id="@+id/home_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="#ffffff"
+            tl:tl_iconHeight="23dp"
+            tl:tl_iconWidth="23dp"
+            tl:tl_indicator_color="#2C97DE"
+            tl:tl_indicator_height="0dp"
+            tl:tl_textSelectColor="#2C97DE"
+            tl:tl_textUnselectColor="#66000000"
+            tl:tl_textsize="12sp"
+            tl:tl_underline_color="#DDDDDD"
+            tl:tl_underline_height="1dp"
+            />
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/olderboxs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/olderboxs_home_viewpage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+            <com.flyco.tablayout.CommonTabLayout
+                android:id="@+id/olderboxs_home_tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="#ffffff"
+                tl:tl_iconHeight="23dp"
+                tl:tl_iconWidth="23dp"
+                tl:tl_indicator_color="#2C97DE"
+                tl:tl_indicator_height="0dp"
+                tl:tl_textSelectColor="#2C97DE"
+                tl:tl_textUnselectColor="#66000000"
+                tl:tl_textsize="12sp"
+                tl:tl_underline_color="#DDDDDD"
+                tl:tl_underline_height="1dp"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+     <item android:title="切换模式"
+         android:id="@+id/actionbar"
+         app:actionViewClass="android.support.v7.widget.SearchView" />
+     <item android:id="@+id/notes" android:title="看照备忘"></item>
+     <item android:id="@+id/help" android:title="帮助文档"></item>
+     <item android:id="@+id/setting" android:title="详细设置"></item>
+
+</menu>

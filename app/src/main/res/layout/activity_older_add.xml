@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/windowBackground"
+    android:orientation="vertical"
+    tools:ignore="RtlSymmetry">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_marginTop="10dp"
+            android:layout_width="32dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:background="@mipmap/plan_bill_icon_left"
+            android:gravity="center"
+            android:onClick="onClick" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="新增老人"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"/>
+
+
+        <Button
+            android:id="@+id/forward"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/plan_add_icon_right"
+            android:onClick="onClick" />
+
+    </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            app:cardBackgroundColor="@color/colorPrimary"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="6dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:paddingBottom="20dp">
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"/>
+
+                <TextView
+                    android:layout_width="160dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/style_radius_stroke"
+                    android:gravity="center"
+                    android:text="老人信息"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="17sp" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:text="老人姓名"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/style_radius_stroke"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:hint="请输入姓名"
+                        android:singleLine="true"
+                        android:textColor="@color/current_time_text"
+                        android:background="@null"
+                        android:gravity="center_vertical|right"
+                        android:textSize="16sp"
+                        android:id="@+id/txt_name" />
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="15dp"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/selected_time_text"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:text="出生日期"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/style_radius_stroke"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/tv_selected_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="15dp"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/selected_time_text"
+                        android:text="2019-1-1"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:text="老人性别"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+                <RelativeLayout
+                    android:id="@+id/ll_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:background="@drawable/style_radius_stroke">
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:onClick="onClick"
+                        android:orientation="horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="60dp">
+
+                        <ImageView
+                            android:id="@+id/man_ic"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/male" />
+
+                        <TextView
+                            android:id="@+id/man_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="男"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:onClick="onClick"
+                        android:orientation="horizontal"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="60dp">
+
+                        <ImageView
+                            android:id="@+id/woman_ic"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/female" />
+
+                        <TextView
+                            android:id="@+id/woman_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="女"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:paddingStart="15dp"
+                    android:text="应急电话"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_emephone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/style_radius_stroke"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:hint="请输入应急电话"
+                        android:singleLine="true"
+                        android:textColor="@color/current_time_text"
+                        android:background="@null"
+                        android:gravity="center_vertical|right"
+                        android:inputType="number"
+                        android:textSize="16sp"
+                        android:id="@+id/txt_emephone" />
+
+                    <TextView
+                        android:id="@+id/tv_emephone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="15dp"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/selected_time_text"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

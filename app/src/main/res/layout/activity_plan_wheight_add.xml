@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lsp="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:ignore="RtlSymmetry">
+
+
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="25dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_marginTop="10dp"
+            android:layout_width="32dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:background="@mipmap/plan_bill_icon_left"
+            android:gravity="center"
+            android:onClick="onClick" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="身高体重"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"/>
+
+
+        <Button
+            android:id="@+id/forward"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/plan_add_icon_right"
+            android:onClick="onClick" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/person_content_baby"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/style_radius_stroke5dp"
+        android:onClick="onClick"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_selected_baby"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginEnd="15dp"
+            android:gravity="center"
+            android:text="点击选择宝宝"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_time"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/style_radius_stroke5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="请选择时间："
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"></TextView>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_selected_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="15dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:textColor="@color/selected_time_text"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <com.lsp.RulerView
+        android:id="@+id/weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        lsp:scaleLimit="5"
+        lsp:bgColor="#fcfffc"
+        lsp:firstScale="0"
+        lsp:isBgRoundRect="true"
+        lsp:largeScaleColor="#50b586"
+        lsp:largeScaleStroke="5dp"
+        lsp:minScale="0"
+        lsp:maxScale="100"
+        lsp:midScaleColor="#999999"
+        lsp:midScaleStroke="3dp"
+        lsp:resultNumColor="#50b586"
+        lsp:resultNumTextSize="20sp"
+        lsp:rulerHeight="50dp"
+        lsp:rulerToResultgap="30dp"
+        lsp:scaleCount="10"
+        lsp:scaleGap="10dp"
+        lsp:scaleNumColor="#666666"
+        lsp:scaleNumTextSize="16sp"
+        lsp:showScaleResult="true"
+        lsp:smallScaleColor="#aaaaaa"
+        lsp:smallScaleStroke="2dp"
+        lsp:unit="kg"
+        lsp:unitColor="#50b586"
+        lsp:unitTextSize="10sp" />
+
+    <com.lsp.RulerView
+        android:id="@+id/height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        lsp:bgColor="#fcfffc"
+        lsp:firstScale="0"
+        lsp:isBgRoundRect="true"
+        lsp:largeScaleColor="@color/colorAccent"
+        lsp:largeScaleStroke="5dp"
+        lsp:maxScale="200"
+        lsp:midScaleColor="@color/colorPrimaryDark"
+        lsp:midScaleStroke="3dp"
+        lsp:minScale="0"
+        lsp:resultNumColor="#50b586"
+        lsp:resultNumTextSize="20sp"
+        lsp:rulerHeight="50dp"
+        lsp:rulerToResultgap="30dp"
+        lsp:scaleCount="5"
+        lsp:scaleGap="10dp"
+        lsp:scaleNumColor="#666666"
+        lsp:scaleNumTextSize="16sp"
+        lsp:showScaleResult="true"
+        lsp:smallScaleColor="@color/colorPrimary"
+        lsp:smallScaleStroke="2dp"
+        lsp:unit="cm"
+        lsp:unitColor="#50b586"
+        lsp:unitTextSize="10sp" />
+</LinearLayout>

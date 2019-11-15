@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+     <item android:title="诊断源1" android:id="@+id/handle1"
+     ></item>
+     <item android:id="@+id/handle2" android:title="诊断源2"></item>
+     <item android:id="@+id/handle4" android:title="关闭"></item>
+
+</menu>

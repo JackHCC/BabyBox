@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="picker_view_height">160dp</dimen>
+    <dimen name="date_unit_text_size">18sp</dimen>
+
+
+    <!--老人模式字体尺寸-->
+    <dimen name="older_big">22dp</dimen>
+    <dimen name="older_small">16dp</dimen>
+
+
+</resources>

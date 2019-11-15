@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+     <item android:title="生活百科" android:id="@+id/know1"
+     ></item>
+     <item android:id="@+id/know2" android:title="百科技巧"></item>
+     <item android:id="@+id/know3" android:title="百科在线"></item>
+     <item android:id="@+id/know4" android:title="关闭"></item>
+
+</menu>

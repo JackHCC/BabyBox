@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LiveAlarmActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="232dp"
+        android:background="@drawable/shape_yuan"
+        android:text="设置提醒"
+        android:textSize="25sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorPrimary">
+        <EditText
+            android:id="@+id/camera_seturl"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:lineHeight="24dp"
+            android:paddingTop="0dp"
+            android:hint="输入更新的视频流URL"
+            android:paddingLeft="30dp"
+            android:textColorHint="#eeeeee"/>
+        <Button
+            android:id="@+id/camera_seturl_button"
+            android:layout_marginLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/style_radius_stroke"
+            android:textColor="@color/colorPrimary"
+            android:textSize="15dp"
+            android:paddingTop="0dp"
+            android:text="导入"
+            />
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginTop="70dp"
+        android:paddingTop="8dp"
+        layout="@layout/fragment_camera"
+        ></include>
+
+
+    <ImageView
+        android:id="@+id/camera_webview_error"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/logo"
+        android:visibility="invisible"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="370dp">
+
+            <Button
+                android:id="@+id/button_call"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:textSize="@dimen/older_big"
+                android:text="老人电话"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/button_gethelp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:background="@color/red"
+                android:textColor="@color/white"
+                android:textSize="@dimen/older_small"
+                android:text="紧急求助(摇一摇)"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>
