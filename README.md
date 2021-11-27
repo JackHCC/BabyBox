@@ -5,7 +5,7 @@
 
 ## 项目
 - 组织：[Babycare](https://github.com/babycareorg)
-- 项目：BabyBox
+- 项目：[BabyBox](https://github.com/JackHCC/BabyBox)
 - 硬件：[Babycare-Hardware](https://github.com/JackHCC/BabyCare-Hardware)
 - 服务器：[BabyCareServer](https://github.com/babycareorg/babyCareServer)
 - 网站：[Babycare-Web](https://blog.creativecc.cn/Web-BabyCare/)
